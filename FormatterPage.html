@@ -1,0 +1,74 @@
+<header>
+  <h1>SANCHEZ CALORIC CALCULATIONS</h1>
+  <link href="AboutPage.css" rel="stylesheet">
+  </header>
+ <div class="container">
+  <div class="row">
+  <div class="col">
+      <p><a href="file:///Users/tonysanchez/Desktop/ITEC225%20(Spring%202020)/Project%201/MainPage.html">Home</a></p>
+    </div>
+    <div class="col">
+      <p><a href="file:///Users/tonysanchez/Desktop/ITEC225%20(Spring%202020)/Project%201/AboutPage.html">About</a></p>
+    </div>
+    <div class="col">
+      <p><a href="file:///Users/tonysanchez/Desktop/ITEC225%20(Spring%202020)/Project%201/ContactPage.html">Contact</a></p>
+    </div>
+    <div class="col">
+      <p><a href="file:///Users/tonysanchez/Desktop/ITEC225%20(Spring%202020)/Project%201/InfoPage.html">Info</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+function getResult(){
+var male = document.getElementById("Male");
+var female = document.getElementById("Female");
+var gain = document.getElementById("Gain");
+var lose = document.getElementById("Lose");
+var fname = document.getElementById("fname").value;
+var lname = document.getElementById("lname").value;
+if(male.checked == true && gain.checked == true){
+	alert("''Male'':"+"''"+fname+" "+lname+"'',\n''Bulking'':''3000'',");
+}
+  else if(male.checked == true && lose.checked == true){
+  alert("''Male'':"+"''"+fname+" "+lname+"'',\n''Cutting'':''2000'',");
+}
+  else if(female.checked == true && gain.checked == true){
+  alert("''Female'':"+"''"+fname+" "+lname+"'',\n''Bulking'':''2500'',");
+}
+  else if(female.checked == true && lose.checked == true){
+  alert("''Female'':"+"''"+fname+" "+lname+"'',\n''Cutting'':''1500'',");
+}
+  else{
+  alert("Not enough information");
+}
+}
+</script>
+<h2>Calorie Calculator</h2>
+<h3>
+Sex:
+</h3>
+<div class="clearfix">
+<form action="/action_page.php">
+
+  <input type="radio" id="Male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="Female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <br>
+<h4>
+Goals:
+</h4>
+  <input type="radio" id="Gain" name="goal" value="gain">
+  <label for="goal1">Gain Weight</label><br>
+  <input type="radio" id="Lose" name="goal" value="lose">
+  <label for="goal2">Lose Weight</label><br>
+  <br>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <button onclick="getResult()" id="Submit">Submit</button>
+
+</form>
+
+</div>

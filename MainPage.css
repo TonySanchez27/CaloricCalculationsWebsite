@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #D9D9D9, #FFFFFF);
+}
+h1 {
+  color: #7D1809;
+  border-bottom: 5px solid grey;
+  text-shadow: 1px 2px 2px #A3A3A3;
+}
+h2 {
+  color: #080854;
+}
+p {
+     line-height: 100%;
+     padding-left: 2em;
+}
+.badge {
+  width: 100px;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.clearfix {
+  overflow: auto;
+}
+.row {
+  background: #f8f9fa;
+  margin-top: 20px;
+}
+
+.col {
+  border: solid 1px #6c757d;
+  padding: 10px;
+}
